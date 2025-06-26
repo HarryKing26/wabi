@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wabi-Sabi - Tours a Japón</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        @font-face {
+            font-family: 'Toragon';
+            src: url('font/toragon.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1492571350019-22de08371fd3');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            position: relative;
+            color: #333;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        header {
+            background: rgba(218, 41, 28, 0.9);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            min-height: 90px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-family: 'Toragon', Arial, sans-serif;
+        }
+
+        .espacio-header {
+            height: 120px;
+        }
+
+        nav {
+            margin-top: 0;
+            padding: 10px 0;
+            background: rgba(255, 255, 255, 0.15);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-radius: 0 0 16px 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1em;
+            padding: 10px 18px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: rgba(218, 41, 28, 0.08);
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background: rgba(255, 255, 255, 0.35);
+            color: #da291c;
+            transform: scale(1.08);
+            outline: none;
+        }
+
+        .titulo-pagina {
+            font-family: 'Toragon', Arial, sans-serif;
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #fff;
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin: 25px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .destacado {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        footer {
+            background: rgba(218, 41, 28, 0.9);
+            color: white;
+            padding: 40px 20px;
+            margin-top: 60px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 25px;
+        }
+
+        .redes-sociales a {
+            color: white;
+            font-size: 1.6em;
+            transition: transform 0.3s ease;
+            padding: 10px;
+        }
+
+        .redes-sociales a:hover {
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        .contenido-video {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><span class="destacado">WABI-SABI</span> - TOURS A JAPÓN</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#paquetes">Paquetes</a>
+            <a href="#datos">Datos</a>
+            <a href="#clima">Clima</a>
+            <a href="#cultura">Cultura</a>
+            <a href="#requisitos">Requisitos</a>
+            <a href="#contactanos">Contacto</a>
+            <a href="formulario.php">Formulario</a>
+            <a href="pitch.html">Pitch</a>
+        </nav>
+    </header>
+    <div class="espacio-header"></div>
+
+    <!-- Espacio para que tu equipo coloque el video -->
+    <div class="contenido-video">
+        <h2 class="titulo-pagina">Nuestro Pitch</h2>
+        <!-- Aquí tu equipo puede insertar el video usando la clase video-container -->
+        <div class="video-container">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/757JnIByFPY?si=7XFh0FD8gnfj2zJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Contacta con Wabi-Sabi Japan Tours</h2>
+        <p>¡Déjanos ayudarte a planificar el viaje de tus sueños a Japón!</p>
+        
+        <div class="redes-sociales">
+            <a href="#" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+
+        <p style="margin-top: 30px;">© 2025 Wabi-Sabi Japan - Creada unicamente con fines ácademicos.</p>
+    </footer>
+</body>
+</html>
